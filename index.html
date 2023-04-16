@@ -15,7 +15,7 @@
             <div class='air air3'></div>
             <div class='air air4'></div>
             <div class="direita">
-                <form class="cardlogin" >
+                <form class="cardlogin" action="loginc.html" method="get">
                     <center><h1 class="bemvindo">Bem vindo</h1></center>
                     <div class="botoes">
                         <label for="email">Email</label><input type="email" placeholder="Insira o email" required>
@@ -24,15 +24,17 @@
                         <label for="senha">Senha </label><input type="password" placeholder="Insira a senha" required>
                     </div>
                     <div class="botaologin">
-                        <button class="login" actio><center>Login</center></button>
+                        <a href="loginc.html"> 
+                            <button type="submit" class="login"><center>Login</center></button>
+                        </a>
                     </div>
                     <div>
-                        <center><p id="novaconta">Ainda não tem uma conta?<br><a href="Registro\sign up.html" id="criarconta">Criar conta</a></p></center>
+                        <center><p id="novaconta">Ainda não tem uma conta?<br><a href="sign up.html" id="criarconta">Criar conta</a></p></center>
                         
                     </div>
                 </form>
             </div>
         </section>
-    </div>   
+    </div>
 </body>
 </html>
