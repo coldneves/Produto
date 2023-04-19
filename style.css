@@ -38,7 +38,7 @@ body{
     color: #5465ff;
 }
 
-.direita{
+.areacard{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -132,37 +132,37 @@ section{
   background: #3586ffda;
   overflow: hidden;
 }
-section .air{
+section .onda{
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 90px;
-  background: url(/img/onda.png);
+  background: url(img/onda.png);
   background-size: 990px 100px;
 }
-section .air.air1{
+section .onda.onda1{
   animation: wave 30s linear infinite;
   z-index: 1000;
   opacity: 1;
   animation-delay: 0s;
   bottom: 0;
 }
-section .air.air2{
+section .onda.onda2{
   animation: wave2 15s linear infinite;
   z-index: 999;
   opacity: 0.5;
   animation-delay: -2s;
   bottom: 10px;
 }
-section .air.air3{
+section .onda.onda3{
   animation: wave 30s linear infinite;
   z-index: 998;
   opacity: 0.2;
   animation-delay: 1s;
   bottom: 15px;
 }
-section .air.air4{
+section .onda.onda4{
   animation: wave2 5s linear infinite;
   z-index: 997;
   opacity: 0.7;
