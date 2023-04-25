@@ -5,20 +5,20 @@
 
 body{
   margin: 0;
+  padding: 0;
 }
 
 .main{
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#64e9ff, #103ce7);
+  background: linear-gradient(#1f6baa, #0c406b);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .cardlogin{
-
-  width: 90vw;
+  width: 92vw;
   height: 85vh;
   padding: 30px 30px; /*é uma margem para dentro, primeiro valor para o eixo y e o segundo para o x*/
   border-radius: 20px;
@@ -30,6 +30,7 @@ body{
 .botaogeral{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 10px;
   box-sizing: border-box; 
 }
@@ -41,13 +42,26 @@ body{
   margin-bottom: 10px;
 }
 
+.botoes1>input,
+.botoes2>input{
+  width: 400px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #abc4ff;
+  border-radius: 10px;
+  font-family:'Lora' ;
+  outline: none;
+  box-sizing: border-box; /*limita o input para n passar o padding*/
+}
 .botoes1,
 .botoes2{
+  
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 33.33vw;
+  width: 32vw;
   padding: 10px; /*com apenas um valor, o valor se aplica a ambos os lados*/
   border-radius: 10px;
   border: none;
@@ -62,8 +76,30 @@ body{
   font-family: 'Dongle'; /*o tipo da fonte*/
 }
 
+.botaosign{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  max-width: 200px;
+  width: auto;
+  margin: auto; /*gambiarra para centralizar pq ja cansei de tentar*/
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  filter: grayscale(1); /*animação de pop up*/
+  object-fit: cover; /*animação de pop up*/
+  transition: 0.5s; /* / / / / */
+}
+.botaosign:hover{ /*animação de pop up*/
+  filter: none;
+  transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);  
+}
 .login{
-  width: 100px;
+  margin-top: 7px;
+  width: 195px;
+  height: 43px;
   padding: 10px 0px;
   margin: 10px;
   cursor: pointer;
@@ -71,55 +107,16 @@ body{
   border-radius: 10px;
   letter-spacing: .5px;
   box-shadow: 0px 10px 40px -12px #060547e8;
-}
-
-#novaconta{
-    font-family: 'Lora';
-    color: antiquewhite;
-    font-size: 12pt;
-}
-
-#criarconta{
-    font-family: 'Lora';
-    color:#86c569;
-}
-
-.botoes1>input,
-.botoes2>input{
-  width: 300px;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 12pt;
-  box-shadow: 0px 10px 40px #abc4ff;
-  border-radius: 10px;
-  font-family:'Lora' ;
-  outline: none;
-  box-sizing: border-box; /*limita o input para n passar o padding*/
-}
-
-.botaosign{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0px;
-  margin: 10px;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  letter-spacing: .5px;
-}
-.login{
-  margin-top: 7px;
-  width: 200px;
-  height: 45px;
+  
 }
 .genero{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+}
+.genero>label{
+  color: #ffac12;
 }
 .opcao{
   display: inline-block;
@@ -129,8 +126,8 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  padding-top: 2px;
+  margin-top: 20px;
+  padding: 2px 2px;
   font-family: 'Comfortaa', cursive;
   margin-bottom: 10px;
 }
@@ -139,4 +136,17 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+#novaconta{
+  margin-top: 0px;
+  font-family: 'Lora';
+  color: antiquewhite;
+  font-size: 12pt;
+}
+
+#criarconta{
+  font-family: 'Lora';
+  color:#86c569;
 }

@@ -1,31 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
 body{
-    margin: 0;
+  margin: 0;
+}
+
+.main{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#114672, #062035);
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.form{
+  width: 90%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px; /*é uma margem para dentro, primeiro valor para o eixo y e o segundo para o x*/
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px;
 }
 
 
-.esquerda{
-    width: 50vw;
-    background-image: url(img/undraw_completed_03xt.svg);
+
+.titulo{
+    font-size: 6rem;
+  font-family: 'Montserrat';
+  color: #5465ff;
 }
-.direita{
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    
-    padding: 30px 35px; /*é uma margem para dentro, primeiro valor para o eixo y e o segundo para o x*/
-    border-radius: 20px;
-    background: #0077b6;
-    box-shadow: 0px 10px 40px;
+
+.areacard{
+  background: linear-gradient(#2e88d1, #134d7c);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardlogin{
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px; /*é uma margem para dentro, primeiro valor para o eixo y e o segundo para o x*/
+  border-radius: 20px;
+  background: #008dbe;
+  box-shadow: 0px 10px 40px;
 }
 
 .bemvindo{
-    color: #ffac12;
-    font-size: 4rem; /*tamanho da fonte*/
-    font-weight: 800; /*estilo da fonte*/
-    margin: 0;
-    font-family: 'Comfortaa'; /*o tipo da fonte*/
+  color: #ffac12;
+  font-size: 4em; /*tamanho da fonte*/
+  font-weight: 800; /*estilo da fonte*/
+  margin: 0;
+  font-family: 'Dongle'; /*o tipo da fonte*/
+}
+
+.botoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px; /*com apenas um valor, o valor se aplica a ambos os lados*/
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0px;
+}
+
+.botaologin{
+  display: flex;
+  justify-content: center;
+}
+
+.botaologin>a{
+  text-decoration: none;
+}
+
+
+.login{
+  width: 200px;
+  padding: 10px 0px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: .5px;
+  box-shadow: 0px 10px 40px -12px #050446e8;
+  filter: grayscale(1); /*animação de pop up*/
+  object-fit: cover; /*animação de pop up*/
+  transition: 0.5s; /* / / / / */
+}
+.login:hover{ /*animação de pop up*/
+  filter: none;
+  transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);  
+}
+
+#Logout{
+  margin: 10px 0px;
+  font-family: 'Lora';
+  color: antiquewhite;
+  font-size: 12pt;
+}
+
+#criarconta{
+  font-family: 'Lora';
+  color:#86c569;
+}
+
+.botoes>input{
+  width: 333px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #abc4ff;
+  border-radius: 10px;
+  font-family:'Lora' ;
+  outline: none;
+  box-sizing: border-box; /*limita o input para n passar o padding*/
+}
+
+
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3586ffda;
+  overflow: hidden;
+}
+section .onda{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: url(img/onda.png);
+  background-size: 990px 100px;
+}
+section .onda.onda1{
+  animation: onda 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .onda.onda2{
+  animation: onda2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -2s;
+  bottom: 7px;
+}
+section .onda.onda3{
+  animation: onda 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: 1s;
+  bottom: 12px;
+}
+section .onda.onda4{
+  animation: onda2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -4s;
+  bottom: 17px;
+}
+@keyframes onda{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 950px; 
+  }
+}
+@keyframes onda2{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -950px; 
+  }
+}
+
+img{
+  width: 600px;
+  height: 200px;
 }

@@ -4,126 +4,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 
 body{
-    margin: 0;
+  margin: 0;
 }
 
 .main{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(#64e9ff, #103ce7);
-    display: flex;
-    justify-content: center;
-    align-items: center
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#114672, #062035);
+  display: flex;
+  justify-content: center; /*x*/
+  align-items: center; /*y*/
 }
 
 .form{
-    width: 90%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px; /*é uma margem para dentro, primeiro valor para o eixo y e o segundo para o x*/
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px;
+  width: 90%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px; /*é uma margem para dentro, primeiro valor para o eixo y e o segundo para o x*/
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px;
 }
 
 .botoes > label{
-    font-family: 'Comfortaa', cursive;
-    color: #ff9f1c;
-    margin-bottom: 10px;
+  font-family: 'Comfortaa', cursive;
+  color: #ff9f1c;
+  margin-bottom: 10px;
 }
 
 .titulo{
-    font-family: 'Montserrat';
-    color: #5465ff;
+  font-family: 'Montserrat';
+  color: #5465ff;
 }
 
 .areacard{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: linear-gradient(#2e88d1, #134d7c);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardlogin{
-    width: 70%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px; /*é uma margem para dentro, primeiro valor para o eixo y e o segundo para o x*/
-    border-radius: 20px;
-    background: #0077b6;
-    box-shadow: 0px 10px 40px;
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px; /*é uma margem para dentro, primeiro valor para o eixo y e o segundo para o x*/
+  border-radius: 20px;
+  background: #008dbe;
+  box-shadow: 0px 10px 40px;
 }
 
 .bemvindo{
-    color: #ffac12;
-    font-size: 4em; /*tamanho da fonte*/
-    font-weight: 800; /*estilo da fonte*/
-    margin: 0;
-    font-family: 'Dongle'; /*o tipo da fonte*/
+  color: #ffac12;
+  font-size: 4em; /*tamanho da fonte*/
+  font-weight: 800; /*estilo da fonte*/
+  margin: 0;
+  font-family: 'Dongle'; /*o tipo da fonte*/
 }
 
 .botoes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px; /*com apenas um valor, o valor se aplica a ambos os lados*/
-    border-radius: 10px;
-    border: none;
-    margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px; /*com apenas um valor, o valor se aplica a ambos os lados*/
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0px;
 }
 
 .botaologin{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .botaologin>a{
-  text-decoration: none;
+  text-decoration: none; /*elimina a linha da ancora*/
 }
 
 
 .login{
-    width: 200px;
-    padding: 10px 0px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    letter-spacing: .5px;
-    box-shadow: 0px 10px 40px -12px #060547e8;
+  width: 200px;
+  padding: 10px 0px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: .5px;
+  box-shadow: 0px 10px 40px -12px #050446e8;
+  filter: grayscale(1); /*tratamento da imagem*/
+  object-fit: cover; /*redimensiona a imagem, o "cover" faz com que ele mantenha a proporção */
+  transition: 0.5s;
+}
+.login:hover{ /*hover é a ativação do elemento*/
+  filter: none;
+  transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03); /*prefixo webkit para android, chrome, IOS e safari*/
+  -o-transform: scale(1.03);/*prefico o para Opera*/
+  -moz-transform: scale(1.03); /*prefixo moz para o firefox*/
 }
 
 #novaconta{
-    font-family: 'Lora';
-    color: antiquewhite;
-    font-size: 12pt;
+  margin: 10px 0px;
+  font-family: 'Lora';
+  color: antiquewhite;
+  font-size: 12pt;
 }
 
 #criarconta{
-    font-family: 'Lora';
-    color:#86c569;
+  font-family: 'Lora';
+  color:#86c569;
 }
-
-
 
 .botoes>input{
-    width: 333px;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 12pt;
-    box-shadow: 0px 10px 40px #abc4ff;
-    border-radius: 10px;
-    font-family:'Lora' ;
-    outline: none;
-    box-sizing: border-box; /*limita o input para n passar o padding*/
+  width: 333px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #abc4ff;
+  border-radius: 10px;
+  font-family:'Lora' ;
+  outline: none;
+  box-sizing: border-box; /*limita o input para n passar o padding*/
 }
+
 
 section{
   position: relative;
@@ -142,34 +154,34 @@ section .onda{
   background-size: 990px 100px;
 }
 section .onda.onda1{
-  animation: wave 30s linear infinite;
-  z-index: 1000;
+  animation: onda 30s linear infinite;
+  z-index: 1000; /*profundidade*/
   opacity: 1;
-  animation-delay: 0s;
+  animation-delay: 0s; /*tempo para começar*/
   bottom: 0;
 }
 section .onda.onda2{
-  animation: wave2 15s linear infinite;
+  animation: onda2 15s linear infinite;
   z-index: 999;
   opacity: 0.5;
   animation-delay: -2s;
-  bottom: 10px;
+  bottom: 7px;
 }
 section .onda.onda3{
-  animation: wave 30s linear infinite;
+  animation: onda 30s linear infinite;
   z-index: 998;
   opacity: 0.2;
-  animation-delay: 1s;
-  bottom: 15px;
+  animation-delay: 1s; 
+  bottom: 12px;
 }
 section .onda.onda4{
-  animation: wave2 5s linear infinite;
+  animation: onda2 5s linear infinite;
   z-index: 997;
   opacity: 0.7;
   animation-delay: -4s;
-  bottom: 20px;
+  bottom: 17px;
 }
-@keyframes wave{
+@keyframes onda{
   0%{
     background-position-x: 0px; 
   }
@@ -177,7 +189,7 @@ section .onda.onda4{
     background-position-x: 1000px; 
   }
 }
-@keyframes wave2{
+@keyframes onda2{
   0%{
     background-position-x: 0px; 
   }
