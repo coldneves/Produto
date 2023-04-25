@@ -1,2 +1,4 @@
-# Produto
-# primeiro projeto
+# Desafio de produto da EJ Infoalto
+# Esse foi a minha primeira vez mexendo com HTML e CSS, sinceramente não me interessava muito por frontend mas após esse projeto eu acabei mudando a minha opinião, achei bem interessante todo o trabalho de UI/UX. Por mais que não seja a melhor login page do mundo eu gostei do resultado, ainda preciso ver muita coisa sobre essas duas tecnologias. Daqui para frente vou continuar a estudar mais sobre o front juntamente com o back, que é o meu foco no momemento. 
+# É isso no momento, se eu passar bom se não ano que vem vou tentar de novo, faz o que.
+# 25/04/23 12-28
